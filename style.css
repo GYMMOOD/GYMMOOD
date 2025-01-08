@@ -122,7 +122,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 77%;
+    height: 63%;
     object-fit: cover;
     opacity: 0; /* Ocultar la imagen alternativa por defecto */
     transition: opacity 0.5s ease; /* Transición suave */
@@ -377,12 +377,20 @@ img {
 }
 
 
+#hombres-section .image-box h3 {
+    font-size: 1.2em; /* Ajusta el tamaño */
+    font-weight: bold; /* Cambia el grosor si es necesario */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    text-transform: none !important; /* Fuerza que el texto no se transforme */
+}
+
+
 
 
 
 /* Títulos de las secciones */
 .section-title {
-    font-family: 'Bebas Neue', sans-serif;
+
     font-size: 3em; /* Tamaño grande para el título */
     text-align: center; /* Centrar el texto */
     color: rgb(0, 0, 0); /* Color del texto */
