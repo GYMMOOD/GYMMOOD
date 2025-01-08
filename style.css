@@ -1,0 +1,598 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+AU+VIC+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&display=swap');
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "Poppins", serif;
+    background-color: rgb(255, 255, 255);
+    color: #333;
+}
+
+/* Encabezado */
+/* Encabezado */
+.header {
+    background-color: hsla(327, 100%, 50%, 1);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1111 1111' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"), 
+                      radial-gradient(circle at 0% 99%, hsla(11, 100%, 50%, 1) 0%, transparent 67%), 
+                      radial-gradient(circle at 46% 94%, hsla(327, 100%, 50%, 1) 0%, transparent 81%), 
+                      radial-gradient(circle at 93% 95%, hsla(236, 100%, 23%, 1) 0%, transparent 66%), 
+                      radial-gradient(circle at 89% 8%, hsla(206, 100%, 9%, 1) 0%, transparent 150%);
+    background-blend-mode: overlay, normal, normal, normal, normal;
+    color: rgb(245, 245, 245);
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+.logo-img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.header-content h1 {
+    font-family: "Poppins", serif;
+    margin-bottom: 40px;
+}
+
+.header-content h2 {
+    font-family: "Playwrite AU VIC Guides", serif;
+    font-size: 3em;
+    margin-bottom: 00px;
+}
+
+.social-links a {
+    font-family: "Poppins", serif;
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Galería de imágenes */
+.gallery-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Galería de imágenes */
+/* Galería de imágenes */
+.image-gallery {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.image-box img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    transition: opacity 0.1s ease, transform 0.1s ease; /* Transición suave y efecto zoom */
+}
+
+.image-box .alternate-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    opacity: 0; /* Ocultar la imagen alternativa por defecto */
+    transition: opacity 0.5s ease; /* Transición suave */
+}
+
+.image-box:hover .alternate-image {
+    opacity: 1; /* Mostrar la imagen alternativa al pasar el mouse */
+}
+
+.image-box:hover img {
+    opacity: 0; /* Ocultar la imagen principal */
+}
+
+.image-description {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Responsivo: Pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+    .image-box {
+        width: 45%; /* Dos imágenes por fila en pantallas medianas */
+    }
+}
+
+/* Responsivo: Pantallas pequeñas (celulares) */
+@media (max-width: 480px) {
+    .image-box {
+        width: 90%; /* Una imagen por fila en pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+}
+
+.product-name {
+    font-family: 'Rubik Vinyl', serif;
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-price {
+    font-family: 'Rubik Vinyl', serif;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Responsivo: Pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    
+    .image-box {
+        width: 45%;
+    }
+}
+
+/* Responsivo: Pantallas pequeñas (celulares) */
+@media (max-width: 480px) {
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .image-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .product-name {
+        font-size: 1em;
+    }
+
+    .product-price {
+        font-size: 0.9em;
+    }
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-float img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Sección de videos */
+.video-gallery {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.video-gallery h2 {
+    font-family: 'Rubik Vinyl', serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.video-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.video-box {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.video-box video {
+    width: 70%;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-description {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Responsivo: Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .video-box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-box {
+        width: 90%;
+    }
+}
+
+/* Estilo del botón btn-31 */
+.btn-31,
+.btn-31 * {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.btn-31 {
+    -webkit-tap-highlight-color: transparent;
+   
+    background-color: #000;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 1.5;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    position: relative;
+
+    display: inline-block;
+    text-align: center;
+    width: 150px; /* Establece un ancho fijo para todos los botones */
+    height: 50px; /* Establece una altura fija para todos los botones */
+}
+
+/* Para que el texto siempre esté centrado vertical y horizontalmente */
+.btn-31 .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.btn-31:before {
+    --progress: 100%;
+    background:  #060F7C;
+    -webkit-clip-path: polygon(100% 0, var(--progress) var(--progress), 0 100%, 100% 100%);
+    clip-path: polygon(100% 0, var(--progress) var(--progress), 0 100%, 100% 100%);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transition: clip-path 0.2s ease;
+}
+
+.btn-31:hover:before {
+    --progress: 0%;
+}
+
+.btn-31:hover .text {
+    animation: move-up-alternate 0.3s ease forwards;
+}
+
+@keyframes move-up-alternate {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(80%); }
+    51% { transform: translateY(-80%); }
+    to { transform: translateY(0); }
+}
+
+/* Responsivo: Para ajustar en pantallas pequeñas */
+@media (max-width: 480px) {
+    .btn-31 {
+        width: 100%; /* En móviles, los botones ocuparán todo el ancho disponible */
+        height: 60px; /* Altura consistente en móviles */
+        margin-bottom: 10px; /* Espacio entre botones */
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Fondo de gradiente para las secciones */
+.gradient-bg {
+  
+    background-color: hsla(217, 0%, 100%, 1);
+    background-image: radial-gradient(circle at 86% 50%, hsla(280, 0%, 89%, 1) 6.688754566361296%, transparent 44.98438254159411%);
+    background-blend-mode: normal;
+}
+
+.section-visible {
+    opacity: 1; /* Se hace visible */
+    transform: translateY(0); /* Vuelve a su posición original */
+}
+
+.section-divider {
+    height: 50px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2), transparent);
+}
+
+
+
+
+
+/* Títulos de las secciones */
+.section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3em; /* Tamaño grande para el título */
+    text-align: center; /* Centrar el texto */
+    color: rgb(0, 0, 0); /* Color del texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el texto */
+    margin-bottom: 30px; /* Espacio debajo del título */
+    position: relative; /* Para los decoradores */
+    z-index: 1; /* Asegura que el título esté delante */
+}
+
+/* Decorador superior del título */
+.section-title:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+/* Decorador inferior del título */
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 3px;
+    z-index: -1;
+}
+
+/* Animación suave para los títulos */
+.section-title {
+    animation: fadeInTitle 0.5s ease-in-out;
+}
+
+
+/* General para las secciones */
+.section {
+    background-size: cover;
+    background-position: center;
+   
+    padding: 100px 0;
+   
+    margin: 20px auto; /* Centramos las secciones */
+    width: 90%; /* Reduce el ancho del contenido a un 90% del viewport */
+    max-width: 1600px; /* Limita el ancho máximo en pantallas grandes */
+    border: 3px solid rgb(0, 0, 0); /* Borde suave */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Menos intenso */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .section {
+        width: 95%; /* Aumenta el ancho en pantallas pequeñas */
+        padding: 30px 10px; /* Reduce el padding en dispositivos más pequeños */
+    }
+}
+
+
+
+
+
+
+
+
+.card {
+    font-family: Montserrat, sans-serif;
+    width: 90%; /* Se ajustará al 90% del ancho de la pantalla */
+    max-width: 900px; /* No excederá este tamaño en pantallas grandes */
+    height: auto; /* Altura dinámica para adaptarse al contenido */
+    margin: 20px auto; /* Centra la tarjeta horizontalmente */
+    background: #65dad4;
+    border: 3px solid #000000;
+    box-shadow: 12px 12px 0 #000000;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.head {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    width: 100%;
+    height: 32px;
+    background: #ffffff;
+    padding: 5px 12px;
+    color: #000000;
+    border-bottom: 3px solid #000000;
+}
+
+.content {
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    border: 3px solid #000000;
+    box-shadow: 3px 3px 0 #000000;
+    font-weight: 750;
+    background: #4ade80;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    translate: 1.5px 1.5px;
+    box-shadow: 1.5px 1.5px 0 #000000;
+    background: #1ac2ff;
+}
+
+.button:active {
+    translate: 3px 3px;
+    box-shadow: 0 0 0 #000000;
+}
+
+.card:hover {
+    translate: -6px;
+}
+
+/* Media queries para hacer la tarjeta más responsiva */
+@media (max-width: 768px) {
+    .card {
+        width: 95%; /* Ocupa el 95% del ancho en pantallas medianas */
+        box-shadow: 8px 8px 0 #000000;
+    }
+
+    .head {
+        font-size: 12px; /* Ajusta el tamaño de fuente del encabezado */
+    }
+
+    .content {
+        font-size: 12px; /* Ajusta el tamaño de fuente del contenido */
+    }
+
+    .button {
+        padding: 5px 8px; /* Ajusta el tamaño del botón */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+        box-shadow: 6px 6px 0 #000000;
+    }
+
+    .head {
+        font-size: 10px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by G4b413l */ 
+.ball {
+    position: relative;
+    bottom: 50px;
+    left: calc(100% - 20px);
+    width: 50px;
+    height: 50px;
+    background: #ff0000;
+    border-radius: 50%;
+    animation: ball-move8234 3s ease-in-out 1s infinite alternate;
+  }
+  
+  .ball::after {
+    position: absolute;
+    content: '';
+    top: 25px;
+    right: 5px;
+    width: 5px;
+    height: 5px;
+    background: #000;
+    border-radius: 50%;
+  }
+  
+  .bar {
+    width: 200px;
+    height: 12.5px;
+    background: #FFDAAF;
+    border-radius: 30px;
+    transform: rotate(-15deg);
+    animation: up-down6123 3s ease-in-out 1s infinite alternate;
+  }
+  
+  @keyframes up-down6123 {
+    from {
+      transform: rotate(-15deg);
+    }
+  
+    to {
+      transform: rotate(15deg);
+    }
+  }
+  
+  @keyframes ball-move8234 {
+    from {
+      left: calc(100% - 40px);
+      transform: rotate(360deg);
+    }
+  
+    to {
+      left: calc(0% - 20px);
+      transform: rotate(0deg);
+    }
+  }
+
+
+
