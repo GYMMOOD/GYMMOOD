@@ -3,15 +3,16 @@
 
 /* General */
 * {
-    margin: 0;
-    padding: 0;
-
+    box-sizing: border-box;
 }
+
 
 body {
     font-family: "Poppins", serif;
     background-color: rgb(255, 255, 255);
     color: #333;
+    margin: 0;
+    overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
 /* Encabezado */
@@ -69,12 +70,21 @@ body {
 
 .row {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en línea */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre elementos */
 }
+
 
 /* Galería de imágenes */
 /* Galería de imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 .image-gallery {
     padding: 20px;
     max-width: 1200px;
@@ -172,26 +182,27 @@ body {
     }
 }
 
-/* Responsivo: Pantallas pequeñas (celulares) */
 @media (max-width: 480px) {
-    .row {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .image-box {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-    
-    .product-name {
-        font-size: 1em;
+    .header {
+        padding: 10px;
+        font-size: 14px;
     }
 
-    .product-price {
-        font-size: 0.9em;
+    .btn-31 {
+        width: 90%; /* Botones más anchos en móviles */
+        height: auto; /* Ajusta altura automáticamente */
+    }
+
+    .image-box {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    .card {
+        width: 100%;
+        box-shadow: 4px 4px 0 #000000;
     }
 }
+
 
 /* Botón flotante de WhatsApp */
 .whatsapp-float {
@@ -417,10 +428,10 @@ body {
     background-size: cover;
     background-position: center;
    
-    padding: 100px 0;
+    padding: 20px;
    
-    margin: 20px auto; /* Centramos las secciones */
-    width: 90%; /* Reduce el ancho del contenido a un 90% del viewport */
+    margin: 0 auto;
+    width: 100%; /* Reduce el ancho del contenido a un 90% del viewport */
     max-width: 1600px; /* Limita el ancho máximo en pantallas grandes */
     border: 3px solid rgb(0, 0, 0); /* Borde suave */
     border-radius: 10px; /* Esquinas redondeadas */
@@ -540,59 +551,7 @@ body {
 
 
 
-/* From Uiverse.io by G4b413l */ 
-.ball {
-    position: relative;
-    bottom: 50px;
-    left: calc(100% - 20px);
-    width: 50px;
-    height: 50px;
-    background: #ff0000;
-    border-radius: 50%;
-    animation: ball-move8234 3s ease-in-out 1s infinite alternate;
-  }
-  
-  .ball::after {
-    position: absolute;
-    content: '';
-    top: 25px;
-    right: 5px;
-    width: 5px;
-    height: 5px;
-    background: #000;
-    border-radius: 50%;
-  }
-  
-  .bar {
-    width: 200px;
-    height: 12.5px;
-    background: #FFDAAF;
-    border-radius: 30px;
-    transform: rotate(-15deg);
-    animation: up-down6123 3s ease-in-out 1s infinite alternate;
-  }
-  
-  @keyframes up-down6123 {
-    from {
-      transform: rotate(-15deg);
-    }
-  
-    to {
-      transform: rotate(15deg);
-    }
-  }
-  
-  @keyframes ball-move8234 {
-    from {
-      left: calc(100% - 40px);
-      transform: rotate(360deg);
-    }
-  
-    to {
-      left: calc(0% - 20px);
-      transform: rotate(0deg);
-    }
-  }
+
 
 
 
