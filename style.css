@@ -388,6 +388,13 @@ img {
     margin-bottom: 10px; /* Espacio debajo del título */
     text-transform: none !important; /* Fuerza que el texto no se transforme */
 }
+#ofertas-section .image-box h3 {
+    font-size: 1.2em; /* Ajusta el tamaño */
+    font-weight: bold; /* Cambia el grosor si es necesario */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    text-transform: none !important; /* Fuerza que el texto no se transforme */
+}
+
 
 
 
