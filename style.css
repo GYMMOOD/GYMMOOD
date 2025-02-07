@@ -256,8 +256,7 @@ img {
 
 .video-box video {
     width: 70%;
-    border: 2px solid #aaa;
-    border-radius: 5px;
+   
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -476,7 +475,7 @@ img {
     max-width: 900px; /* No excederá este tamaño en pantallas grandes */
     height: auto; /* Altura dinámica para adaptarse al contenido */
     margin: 20px auto; /* Centra la tarjeta horizontalmente */
-    background: #A6213C;
+    background: #ffffff;
     border: 3px solid #000000;
     box-shadow: 12px 12px 0 #000000;
     overflow: hidden;
@@ -489,7 +488,7 @@ img {
     font-weight: 900;
     width: 100%;
     height: 32px;
-    background: #ffffff;
+    background:#f2f549f5;
     padding: 5px 12px;
     color: #000000;
     border-bottom: 3px solid #000000;
@@ -581,7 +580,7 @@ img {
 }
 
 h3 {
-    color: #4a0072; /* Un morado similar al de la imagen */
+    color: #000000; /* Un morado similar al de la imagen */
     font-size: 18px;
     font-weight: bold;
 }
