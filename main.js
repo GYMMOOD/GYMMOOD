@@ -27,3 +27,4 @@ const observer = new IntersectionObserver(observerCallback, observerOptions);
 
 // Observar cada sección
 sections.forEach(section => observer.observe(section));
+

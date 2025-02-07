@@ -103,7 +103,7 @@ img {
     margin-bottom: 20px;
     text-align: center;
     background-color: #f9f9f9;
-    border: 2px solid #aaa;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -378,6 +378,12 @@ img {
 
 
 #hombres-section .image-box h3 {
+    font-size: 1.2em; /* Ajusta el tamaño */
+    font-weight: bold; /* Cambia el grosor si es necesario */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    text-transform: none !important; /* Fuerza que el texto no se transforme */
+}
+#mujeres-section .image-box h3 {
     font-size: 1.2em; /* Ajusta el tamaño */
     font-weight: bold; /* Cambia el grosor si es necesario */
     margin-bottom: 10px; /* Espacio debajo del título */
