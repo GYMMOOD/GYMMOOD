@@ -99,7 +99,7 @@ img {
 }
 
 .image-box {
-    width: 30%;
+    width:25%;
     margin-bottom: 20px;
     text-align: center;
     background-color: #f9f9f9;
@@ -604,4 +604,27 @@ p {
     background-color: #f4f4f4;
     font-size: 14px;
     color: #333;
+}
+
+
+
+
+.price-container {
+    display: flex;
+    flex-direction: column-reverse; /* Invierte el orden: el nuevo precio arriba */
+    align-items: center; /* Centra los precios */
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888; /* Color gris para el precio anterior */
+    font-size: 0.9em; /* Un poco más pequeño */
+}
+
+.new-price {
+    color: #d32f2f; /* Rojo para resaltar el nuevo precio */
+    font-size: 1.3em; /* Más grande para destacarlo */
+    font-weight: bold;
 }
