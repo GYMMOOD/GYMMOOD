@@ -476,7 +476,7 @@ img {
     max-width: 900px; /* No excederá este tamaño en pantallas grandes */
     height: auto; /* Altura dinámica para adaptarse al contenido */
     margin: 20px auto; /* Centra la tarjeta horizontalmente */
-    background: #F2D430;
+    background: #A6213C;
     border: 3px solid #000000;
     box-shadow: 12px 12px 0 #000000;
     overflow: hidden;
